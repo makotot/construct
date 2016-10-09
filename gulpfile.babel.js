@@ -39,6 +39,7 @@ gulp.task('template', () => {
   return gulp
     .src([
       './src/templates/*.ejs',
+      '!./src/templates/_*.ejs',
     ])
     .pipe(ejs({
       title: 'CONSTRUCT',

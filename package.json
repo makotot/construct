@@ -1,11 +1,12 @@
 {
   "name": "construct-css",
   "version": "0.1.0",
-  "description": "",
+  "description": "Yet another CSS framework that follows ITCSS and BEM (BEMIT)",
   "main": "gulpfile.babel.js",
   "scripts": {
     "start": "gulp serve",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp build",
+    "doc": "gulp doc"
   },
   "repository": {
     "type": "git",
@@ -36,8 +37,6 @@
     "gulp-sass": "^2.3.1",
     "gulp-watch": "^4.3.6",
     "postcss-clearfix": "^1.0.0",
-    "postcss-style-guide": "^0.13.0",
-    "psg-theme-minimal": "^0.1.0",
     "run-sequence": "^1.2.1"
   }
 }
