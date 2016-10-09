@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+.c-loader {
+  position: relative;
+  width: $loader_dimension;
+  height: $loader_dimension;
+  border: $loader_border_width solid $color_primary;
+  border-top: $loader_border_width solid darken($color_base_opposite, 10);
+  border-radius: 50%;
+  animation: spinner $loader_duration infinite linear;
+
+  &--small  {
+    width: $loader_dimension / 2;
+    height: $loader_dimension / 2;
+    border: ($loader_border_width / 2) solid $color_primary;
+    border-top: ($loader_border_width / 2) solid darken($color_base_opposite, 10);
+  }
+
+  &--large  {
+    width: $loader_dimension * 2;
+    height: $loader_dimension * 2;
+    border: ($loader_border_width * 2) solid $color_primary;
+    border-top: ($loader_border_width * 2) solid darken($color_base_opposite, 10);
+  }
+}

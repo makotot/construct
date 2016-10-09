@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+.c-checkbox {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+
+  &--disabled {
+    cursor: default;
+  }
+
+  &__input  {
+    appearance: none;
+    display: none;
+  }
+
+  &__input + &__check {
+    position: relative;
+    width: $check_dimension;
+    height: $check_dimension;
+    border: $check_border_width solid $color_primary;
+    background-color: $color_base_opposite;
+    transition: all $check_duration ease-in;
+  }
+
+  &__input + &__check::before {
+    @include center();
+    color: $color_primary;
+    content: '';
+    font-weight: 700;
+  }
+
+  &__input:checked + &__check::before {
+    content: '\2713';
+  }
+
+  &__input:disabled:checked + &__check::before  {
+    color: $color_disabled;
+  }
+
+  &__input:disabled + &__check {
+    border: $check_border_width solid $color_disabled;
+  }
+
+  &__label  {
+    padding: 0 0 0 $check_label_space;
+  }
+
+  &__input:disabled ~ &__label  {
+    color: $color_disabled;
+  }
+}

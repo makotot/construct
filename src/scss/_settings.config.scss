@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+/* @start color */
+
+$color_base: rgba(60, 60, 60, 1) !default;
+$color_base_opposite: #fff !default;
+$color_primary: rgba(65, 95, 225, 1) !default;
+$color_secondary: rgba(255, 100, 100, 1) !default;
+$color_disabled: darken($color_base_opposite, 12) !default;
+
+/* @end color */
+
+
+$font_size: 14px !default;
+$font_size_small: 12px !default;
+$font_family: --apple-system, BlinkMacSystemFont, Heivetica, Arial, sans-serif !default;
+$line_height: 1.4 !default;
+
+$max_columns: 12 !default;
+
+$breakpoints: (
+  'small': 400px,
+  'medium': 800px,
+  'large': 1024px
+) !default;
+
+$sidebar_width: 260px !default;
+
+$side_nav_link_duration: 0.3s !default;
+$side_nav_space: 1rem !default;
+
+$headbar_space: 1.4rem !default;
+$headbar_link_duration: 0.3s !default;
+
+$pagination_dimension: 2.4rem !default;
+$pagination_space: 0.5rem !default;
+
+$avator_dimension: 6rem !default;
+
+$badge_space: 0.5rem !default;
+$badge_font_size: 0.8rem !default;
+$badge_min_width: 2rem !default;
+$badge_border_width: 1px !default;
+$badge_radius: 2rem !default;
+$badge_circle_dimension: 2rem !default;
+$badge_circle_lineheight: 1.8rem !default;
+
+$breadcrumb_space: 1rem !default;
+
+$button_space: 1rem !default;
+$button_border_width: 2px !default;
+$button_duration: 0.1s !default;
+
+$card_space: 1rem !default;
+
+$check_dimension: 1.2rem !default;
+$check_border_width: 2px !default;
+$check_label_space: 0.4rem !default;
+$check_duration: 0.1s !default;
+
+$radio_dimension: 1.2rem !default;
+$radio_border_width: 2px !default;
+$radio_checked_dimension: 0.4rem !default;
+$radio_label_space: 0.4rem !default;
+
+$code_space: 1rem !default;
+$code_border_width: 0.4rem !default;
+
+$divider_space: 3rem !default;
+
+$input_space: 0.4rem !default;
+$input_border_width: 2px !default;
+
+$list_space: 1.6rem !default;
+
+$loader_dimension: 2rem !default;
+$loader_border_width: 0.2rem !default;
+$loader_duration: 0.6s !default;
+
+$menu_space: 1rem !default;
+
+$note_space: 1rem !default;
+$note_head_font_size: 1.4rem !default;
+
+$paragraph_space: 0.6rem !default;
+$paragraph_font_size: 1.1rem !default;
+$paragraph_line_height: 1.6 !default;
+
+$quote_space: 1rem !default;
+$quote_border_width: 0.4rem !default;
+
+$table_space: 0.6rem !default;
+$table_border_width: 0.4rem !default;
+
+$tag_space: 0.2rem !default;
+$tag_font_size: 0.8rem !default;
+
+$textarea_space: 0.4rem !default;
+$textarea_border_width: 2px !default;
+$textarea_min_height: 8rem;
+
+$selectbox_space: 0.4rem !default;
+$selectbox_triangle: 0.4rem !default;
+
+$content_space: 8rem !default;
+
+$hero_space: 8rem !default;
+
+$heading_font_size_1: 3.6rem !default;
+$heading_font_size_2: 2.6rem !default;
+$heading_font_size_3: 1.8rem !default;
+$heading_font_size_4: 1.4rem !default;
+$heading_font_size_5: 1.2rem !default;
+$heading_font_size_6: 1.1rem !default;
+
+$heading_letter_space_1: 1.4rem !default;
+$heading_letter_space_2: 1rem !default;
+$heading_letter_space_3: 0.7rem !default;
+$heading_letter_space_4: 0.4rem !default;
+$heading_letter_space_5: 0.2rem !default;
+$heading_letter_space_6: 0 !default;
+
+$footer_space: 2rem !default;
+
+$inline_list_space: 1rem !default;
+
+$media_card_space: 1rem !default;

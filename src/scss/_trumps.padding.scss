@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+.u-padding  {
+
+  @for $i from 0 through 10  {
+    #{&}-#{$i} {
+      padding: #{$i}rem;
+    }
+
+    #{&}-top-#{$i}  {
+      padding-top: #{$i}rem;
+    }
+
+    #{&}-right-#{$i}  {
+      padding-right: #{$i}rem;
+    }
+
+    #{&}-bottom-#{$i}  {
+      padding-bottom: #{$i}rem;
+    }
+
+    #{&}-left-#{$i}  {
+      padding-left: #{$i}rem;
+    }
+  }
+}

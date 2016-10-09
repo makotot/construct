@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+.c-tag  {
+  display: table;
+  border: 1px solid $color_base;
+  background-color: $color_base;
+  color: $color_base_opposite;
+  padding: $tag_space;
+  font-size: $tag_font_size;
+  font-weight: 300;
+
+  &--primary  {
+    border: 1px solid $color_primary;
+    background-color: $color_primary;
+    color: $color_base_opposite;
+  }
+
+  &--secondary  {
+    border: 1px solid $color_secondary;
+    background-color: $color_secondary;
+    color: $color_base_opposite;
+  }
+
+  &--reverse  {
+    border: 1px solid $color_base;
+    background-color: $color_base_opposite;
+    color: $color_base;
+  }
+
+  &--disabled {
+    border: 1px solid $color_disabled;
+    background-color: $color_base_opposite;
+    color: $color_disabled;
+  }
+}

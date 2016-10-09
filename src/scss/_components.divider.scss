@@ -1,0 +1,6 @@
+@charset "utf-8";
+
+.c-divider  {
+  margin: $divider_space 0;
+  border-top: 1px solid darken($color_base_opposite, 10);
+}

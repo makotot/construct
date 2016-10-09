@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+.o-hero {
+  padding: $hero_space 0;
+  text-align: center;
+
+  &__head {
+  }
+
+  &__heading  {
+  }
+
+  &__sub-heading  {
+    display: block;
+  }
+
+  &__heading + &__sub-heading {
+    margin: ($hero_space / 4) 0 0;
+  }
+
+  &__head + &__body {
+    margin: ($hero_space / 2) 0 0;
+  }
+
+  &__body {
+  }
+}

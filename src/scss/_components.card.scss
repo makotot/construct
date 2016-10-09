@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+.c-card {
+  display: block;
+  border: 1px solid darken($color_base_opposite, 15);
+
+  &__head {
+    padding: $card_space;
+    background-color: $color_base_opposite;
+    font-weight: 400;
+  }
+
+  &__head + &__body {
+    margin: -$card_space 0 0;
+  }
+
+  &__body {
+    padding: $card_space;
+    background-color: $color_base_opposite;
+    font-weight: 300;
+  }
+}

@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+.c-input  {
+  width: 100%;
+  padding: $input_space;
+  background-color: darken($color_base_opposite, 3);
+  border-bottom: $input_border_width solid lighten($color_primary, 15);
+  font-size: 1rem;
+
+  &:hover {
+    border-bottom: $input_border_width solid lighten($color_primary, 10);
+    background-color: darken($color_base_opposite, 2);
+  }
+
+  &:focus  {
+    border-bottom: $input_border_width solid $color_primary;
+    background-color: darken($color_base_opposite, 1);
+  }
+
+  &--disabled {
+    background-color: $color_disabled;
+    color: darken($color_disabled, 10);
+    border-bottom: $input_border_width solid $color_disabled;
+    pointer-events: none;
+  }
+}

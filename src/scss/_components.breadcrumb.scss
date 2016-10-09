@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+.c-breadcrumb {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__item + &__item {
+    margin: 0 0 0 $breadcrumb_space;
+
+    &::before  {
+      margin: 0 $breadcrumb_space 0 0;
+      content: '/';
+      color: $color_primary;
+    }
+  }
+
+  &__link {
+    color: $color_primary;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__link--active {
+    color: $color_base;
+    font-weight: 700;
+    cursor: default;
+    pointer-events: none;
+  }
+}

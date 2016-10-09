@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+.c-menu {
+  display: flex;
+  flex-direction: column;
+
+  &--frame  {
+    border: 1px solid darken($color_base_opposite, 15);
+  }
+
+  &__item {
+  }
+
+  &__inner  {
+    display: flex;
+    padding: $menu_space;
+  }
+
+  &__item--underline + &__item--underline {
+    border-top: 1px solid darken($color_base_opposite, 15);
+  }
+}

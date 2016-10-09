@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+/*
+@styleguide
+@title Heading
+
+<h1 class="c-heading-1">c-heading-1</h1>
+<h2 class="c-heading-2">c-heading-2</h1>
+<h3 class="c-heading-3">c-heading-3</h1>
+<h4 class="c-heading-4">c-heading-4</h1>
+<h5 class="c-heading-5">c-heading-5</h1>
+<h6 class="c-heading-6">c-heading-6</h1>
+
+```
+<h1 class="c-heading-1">c-heading-1</h1>
+<h2 class="c-heading-2">c-heading-2</h1>
+<h3 class="c-heading-3">c-heading-3</h1>
+<h4 class="c-heading-4">c-heading-4</h1>
+<h5 class="c-heading-5">c-heading-5</h1>
+<h6 class="c-heading-6">c-heading-6</h1>
+```
+*/
+
+.c-heading  {
+
+  &-1 {
+    margin: 0;
+    font-size: $heading_font_size_1;
+    font-weight: 300;
+    letter-spacing: $heading_letter_space_1;
+
+    &--upper  {
+      text-transform: uppercase;
+    }
+  }
+
+  &-2 {
+    margin: 0;
+    font-size: $heading_font_size_2;
+    font-weight: 300;
+    letter-spacing: $heading_letter_space_2;
+
+    &--upper  {
+      text-transform: uppercase;
+    }
+  }
+
+  &-3 {
+    margin: 0;
+    font-size: $heading_font_size_3;
+    font-weight: 300;
+    letter-spacing: $heading_letter_space_3;
+
+    &--upper  {
+      text-transform: uppercase;
+    }
+  }
+
+  &-4 {
+    margin: 0;
+    font-size: $heading_font_size_4;
+    font-weight: 300;
+    letter-spacing: $heading_letter_space_4;
+
+    &--upper  {
+      text-transform: uppercase;
+    }
+  }
+
+  &-5 {
+    margin: 0;
+    font-size: $heading_font_size_5;
+    font-weight: 300;
+    letter-spacing: $heading_letter_space_5;
+
+    &--upper  {
+      text-transform: uppercase;
+    }
+  }
+
+  &-6 {
+    margin: 0;
+    font-size: $heading_font_size_6;
+    font-weight: 300;
+    letter-spacing: $heading_letter_space_6;
+
+    &--upper  {
+      text-transform: uppercase;
+    }
+  }
+}

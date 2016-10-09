@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+.c-note {
+  display: block;
+  background-color: $color_base_opposite;
+  color: $color_primary;
+  border: 1px solid $color_primary;
+
+  &__head {
+    padding: $note_space;
+    font-size: $note_head_font_size;
+    font-weight: 300;
+  }
+
+  &__head + &__body  {
+    margin: -$note_space 0 0 ;
+  }
+
+  &__body {
+    font-weight: 400;
+    padding: $note_space;
+  }
+}

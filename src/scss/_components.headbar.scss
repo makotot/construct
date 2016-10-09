@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+.c-headbar  {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: $color_primary;
+
+  &__title  {
+    padding: $headbar_space;
+    background-color: $color_base;
+    color: $color_primary;
+    text-decoration: none;
+  }
+
+  &__nav  {
+    display: flex;
+  }
+
+  &__nav-item {
+    display: flex;
+  }
+
+  &__nav-link {
+    display: flex;
+    padding: $headbar_space;
+    color: $color_base_opposite;
+    text-decoration: none;
+    transition: all $headbar_link_duration ease;
+
+    &:hover {
+      background-color: $color_base_opposite;
+      color: $color_primary;
+    }
+  }
+}

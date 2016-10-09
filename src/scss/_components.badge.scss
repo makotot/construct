@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+.c-badge  {
+  display: table;
+  padding: $badge_space;
+  background-color: $color_base;
+  color: $color_base_opposite;
+  border: $badge_border_width solid $color_base;
+  border-radius: $badge_radius;
+  font-size: $badge_font_size;
+  min-width: $badge_min_width;
+
+  &--primary  {
+    background-color: $color_primary;
+    color: $color_base_opposite;
+    border: $badge_border_width solid $color_primary;
+  }
+
+  &--secondary  {
+    background-color: $color_secondary;
+    color: $color_base_opposite;
+    border: $badge_border_width solid $color_secondary;
+  }
+
+  &--reverse  {
+    background-color: $color_base_opposite;
+    color: $color_base;
+    border: $badge_border_width solid $color_base;
+  }
+
+  &--disabled {
+    background-color: $color_base_opposite;
+    color: $color_disabled;
+    border: $badge_border_width solid $color_disabled;
+  }
+
+  &--circle {
+    border-radius: 50%;
+    min-width: auto;
+    width: $badge_circle_dimension;
+    height: $badge_circle_dimension;
+    text-align: center;
+    line-height: $badge_circle_lineheight;
+  }
+}

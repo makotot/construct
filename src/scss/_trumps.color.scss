@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+.u-color {
+
+  &-base  {
+    color: $color_base;
+  }
+
+  &-primary {
+    color: $color_primary;
+  }
+
+  &-secondary {
+    color: $color_secondary;
+  }
+
+  &-opposite {
+    color: $color_base_opposite;
+  }
+}

@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+.o-inline-list  {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  &__item {
+  }
+
+  &__item + &__item {
+    margin: 0 0 0 $inline_list_space;
+  }
+}

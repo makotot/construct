@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+.c-table  {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+
+  &__head {
+    text-align: left;
+    font-weight: 400;
+    padding: $table_space;
+    border-bottom: $table_border_width solid $color_primary;
+  }
+
+  &__data {
+    padding: $table_space;
+    font-weight: 300;
+  }
+
+  tr:nth-child(odd) > &__data {
+    background-color: darken($color_base_opposite, 3);
+  }
+
+  tr:nth-child(even) > &__data {
+    background-color: $color_base_opposite;
+  }
+}

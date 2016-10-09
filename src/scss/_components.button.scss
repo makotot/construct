@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+.c-button {
+  display: table;
+  padding: $button_space;
+  border: $button_border_width solid $color_base;
+  background-color: $color_base_opposite;
+  color: $color_base;
+  text-decoration: none;
+  transition: all $button_duration ease;
+  text-align: center;
+
+  &:hover {
+    color: $color_base_opposite;
+    background-color: $color_base;
+    border: $button_border_width solid $color_base;
+  }
+
+  &--primary  {
+    border: $button_border_width solid $color_primary;
+    background-color: $color_base_opposite;
+    color: $color_primary;
+
+    &:hover {
+      color: $color_base_opposite;
+      background-color: $color_primary;
+      border: $button_border_width solid $color_primary;
+    }
+  }
+
+  &--secondary  {
+    border: $button_border_width solid $color_secondary;
+    background-color: $color_base_opposite;
+    color: $color_secondary;
+
+    &:hover {
+      color: $color_base_opposite;
+      background-color: $color_secondary;
+      border: $button_border_width solid $color_secondary;
+    }
+  }
+
+  &--disabled {
+    border: $button_border_width solid $color_disabled;
+    color: $color_disabled;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  &--full-width {
+    width: 100%;
+  }
+
+  &--small  {
+    padding: $button_space / 2;
+    font-size: $font_size / 2;
+
+    @include respond-to('small')  {
+      font-size: $font_size_small / 2;
+    }
+  }
+}

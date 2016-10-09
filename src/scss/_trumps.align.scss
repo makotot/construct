@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+.u-align  {
+
+  &-left  {
+    text-align: left;
+  }
+
+  &-center  {
+    text-align: center;
+  }
+
+  &-right {
+    text-align: right;
+  }
+
+  &-middle  {
+    vertical-align: middle;
+  }
+
+  &-top {
+    vertical-align: top;
+  }
+
+  &-bottom  {
+    vertical-align: bottom;
+  }
+}

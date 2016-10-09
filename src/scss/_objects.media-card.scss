@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+.o-media-card {
+  display: flex;
+  flex-direction: row;
+
+  &--stack  {
+    flex-direction: column;
+  }
+
+  &__thumb  {
+    padding: $media_card_space;
+    text-align: center;
+  }
+
+  &__head {
+    padding: $media_card_space;
+  }
+
+  &__head + &__body {
+    margin: -($media_card_space) 0 0;
+  }
+
+  &__body {
+    padding: $media_card_space;
+  }
+
+  &__body + &__foot {
+    margin: -($media_card_space) 0 0;
+  }
+
+  &__foot {
+    padding: $media_card_space;
+  }
+}

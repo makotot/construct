@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+.c-radio  {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+
+  &--disabled {
+    cursor: default;
+  }
+
+  &__input  {
+    appearance: none;
+    display: none;
+  }
+
+  &__input + &__check {
+    position: relative;
+    width: $radio_dimension;
+    height: $radio_dimension;
+    border: $radio_border_width solid $color_primary;
+    border-radius: 50%;
+    background-color: $color_base_opposite;
+    transition: all 0.1s ease-in;
+  }
+
+  &__input + &__check::before {
+    @include center();
+    background-color: $color_primary;
+    content: '';
+  }
+
+  &__input:checked + &__check::before {
+    width: $radio_checked_dimension;
+    height: $radio_checked_dimension;
+    border-radius: 50%;
+  }
+
+  &__label  {
+    padding: 0 0 0 $radio_label_space;
+  }
+
+  &__input:disabled + &__check  {
+    border: $radio_border_width solid $color_disabled;
+  }
+
+  &__input:disabled:checked + &__check::before {
+    background-color: $color_disabled;
+  }
+
+  &__input:disabled ~ &__label  {
+    color: $color_disabled;
+  }
+}

@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+.u-display {
+
+  &-none  {
+    display: none;
+  }
+
+  &-none--small {
+    @include respond-to('small') {
+      display: none;
+    }
+  }
+
+  &-none--medium {
+    @include respond-to('medium') {
+      display: none;
+    }
+  }
+
+  &-none--large {
+    @include respond-to('large') {
+      display: none;
+    }
+  }
+
+  &-block {
+    display: block;
+  }
+
+  &-block--small  {
+    display: none;
+
+    @include respond-to('small') {
+      display: block;
+    }
+  }
+
+  &-block--medium  {
+    display: none;
+
+    @include respond-to('medium') {
+      display: block;
+    }
+  }
+
+  &-block--large  {
+    display: none;
+
+    @include respond-to('large') {
+      display: block;
+    }
+  }
+}

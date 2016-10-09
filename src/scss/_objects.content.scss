@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+.o-content  {
+
+  &__item {
+  }
+
+  &__item + &__item {
+    padding: $content_space 0 0;
+  }
+
+  &__head {
+  }
+
+  &__body {
+  }
+
+  &__head + &__body {
+    margin: ($content_space / 3) 0 0;
+  }
+
+  &__inner  {
+    padding: ($content_space / 3) 0 0;
+  }
+
+  &__inner + &__inner  {
+    padding: ($content_space / 2) 0 0;
+  }
+
+  &__inner-head + &__inner-body {
+    margin: ($content_space / 4) 0 0;
+  }
+}

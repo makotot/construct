@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+.c-avator {
+  display: table;
+  width: $avator_dimension;
+  height: $avator_dimension;
+  border-radius: 50%;
+
+  &__image  {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+  }
+
+  &--x-small  {
+    width: $avator_dimension / 3;
+    height: $avator_dimension / 3;
+  }
+
+  &--small  {
+    width: $avator_dimension / 1.5;
+    height: $avator_dimension / 1.5;
+  }
+
+  &--large  {
+    width: $avator_dimension * 1.5;
+    height: $avator_dimension * 1.5;
+  }
+
+  &--x-large  {
+    width: $avator_dimension * 3;
+    height: $avator_dimension * 3;
+  }
+}

@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+/*
+@styleguide
+@title Grid
+
+<div class="o-grid">
+  <div class="o-grid__column u-background-base u-color-opposite">1</div>
+  <div class="o-grid__column">2</div>
+</div>
+
+```
+<div class="o-grid">
+  <div class="o-grid__column">1</div>
+  <div class="o-grid__column">2</div>
+</div>
+```
+*/
+
+.o-grid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  @include respond-to('small') {
+    display: block;
+  }
+
+  &--space {
+    margin: 0 -1rem;
+
+    @include respond-to('small') {
+      margin: -1rem 0;
+    }
+  }
+
+  &--center  {
+    justify-content: center;
+    text-align: center;
+  }
+
+  &--wrap  {
+    flex-wrap: wrap;
+  }
+
+  &__column {
+    flex: 1;
+  }
+
+  &__column--space  {
+    margin: 0 1rem;
+
+    @include respond-to('small') {
+      margin: 1rem 0;
+    }
+  }
+
+  @for $i from 1 through $max_columns {
+    &__column-#{$i} {
+      flex-basis: (100 / $i) + %;
+      max-width: (100 / $i) + %;
+
+      @include respond-to('small') {
+        flex-basis: auto;
+        max-width: 100%;
+      }
+    }
+
+    &__column-offset-#{$i} {
+      margin-left: (100 / $i) + %;
+
+      @include respond-to('small') {
+        margin-left: auto;
+      }
+    }
+  }
+}

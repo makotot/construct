@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+/*
+@styleguide
+@title Image
+
+<img src="http://dummyimage.com/100x100/000/fff.png" class="c-image" />
+
+```
+<img src="http://dummyimage.com/100x100/000/fff.png" class="c-image" />
+```
+*/
+
+.c-image  {
+  vertical-align: middle;
+
+  &--full-width {
+    width: 100%;
+  }
+}

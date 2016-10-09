@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+.c-footer {
+  padding: $footer_space;
+  background-color: $color_base;
+  color: lighten($color_base, 30);
+
+  &__link {
+    color: $color_base_opposite;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

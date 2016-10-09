@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+/*
+@styleguide
+@title List
+
+<ul class="c-list">
+  <li class="c-list__item">item</li>
+  <li class="c-list__item">item</li>
+  <li class="c-list__item">item</li>
+</ul>
+
+```
+<ul class="c-list">
+  <li class="c-list__item">item</li>
+  <li class="c-list__item">item</li>
+  <li class="c-list__item">item</li>
+</ul>
+```
+*/
+
+.c-list {
+  padding: 0;
+  margin-left: $list_space;
+
+  &__item {
+    list-style-type: square;
+  }
+}

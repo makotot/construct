@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/*
+@styleguide
+@title Quote
+
+<blockquote class="c-quote">
+  <span class="c-quote__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</span>
+  <cite class="c-quote__citation">source</cite>
+</blockquote>
+
+```
+<blockquote class="c-quote">
+  <span class="c-quote__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</span>
+  <cite class="c-quote__citation">source</cite>
+</blockquote>
+```
+
+*/
+
+.c-quote  {
+  padding: $quote_space;
+  margin: 0;
+  border-left: $quote_border_width solid $color_primary;
+  background-color: darken($color_base_opposite, 3);
+
+  &__text {
+    display: block;
+    color: $color_base;
+  }
+
+  &__citation {
+    display: block;
+    color: darken($color_base_opposite, 30);
+    font-style: italic;
+
+    &:before  {
+      display: inline;
+      content: ' - ';
+    }
+  }
+}

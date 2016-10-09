@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+/*
+@styleguide
+@title Link
+
+<a href="/" class="c-link">Link</a>
+```
+<a href="/" class="c-link">Link</a>
+```
+
+*/
+
+.c-link {
+  color: $color_primary;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &--disabled {
+    color: $color_disabled;
+    cursor: default;
+    pointer-events: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

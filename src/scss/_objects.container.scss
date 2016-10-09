@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+.o-container  {
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  @include respond-to('medium') {
+    margin: 0;
+    padding: 1rem;
+  }
+
+  &--small  {
+    max-width: 50rem;
+
+    @include respond-to('medium') {
+      max-width: 100%;
+    }
+  }
+
+  &--medium {
+    max-width: 60rem;
+
+    @include respond-to('medium') {
+      max-width: 100%;
+    }
+  }
+
+  &--large  {
+    max-width: 70rem;
+
+    @include respond-to('medium') {
+      max-width: 100%;
+    }
+  }
+}

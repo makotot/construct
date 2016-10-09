@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+.c-selectbox  {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    right: 1rem;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-left: $selectbox_triangle solid transparent;
+    border-right: $selectbox_triangle solid transparent;
+    border-top: $selectbox_triangle solid $color_primary;
+  }
+
+  &__select {
+    appearance: none;
+    width: 100%;
+    padding: $selectbox_space;
+    border-radius: 0;
+    background-color: darken($color_base_opposite, 3);
+    border-bottom: 2px solid lighten($color_primary, 15);
+    color: lighten($color_primary, 10);
+    font-size: 1rem;
+    cursor: pointer;
+
+    &:hover {
+      border-bottom: 2px solid lighten($color_primary, 10);
+      background-color: darken($color_base_opposite, 2);
+      color: $color_primary;
+    }
+
+    &:focus {
+      border-bottom: 2px solid $color_primary;
+      background-color: darken($color_base_opposite, 1);
+    }
+  }
+
+  &--disabled {
+    pointer-events: none;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 50%;
+      right: 1rem;
+      transform: translate(-50%, -50%);
+      width: 0;
+      height: 0;
+      border-left: $selectbox_triangle solid transparent;
+      border-right: $selectbox_triangle solid transparent;
+      border-top: $selectbox_triangle solid darken($color_disabled, 10);
+    }
+  }
+
+  &__select--disabled {
+    background-color: $color_disabled;
+    color: darken($color_disabled, 10);
+    border-bottom: $input_border_width solid $color_disabled;
+    pointer-events: none;
+  }
+}

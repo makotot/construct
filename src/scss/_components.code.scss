@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+.c-code {
+  padding: $code_space;
+  margin: 0;
+  border-left: $code_border_width solid $color_primary;
+  background-color: darken($color_base_opposite, 3);
+  white-space: pre;
+  overflow-x: auto;
+
+  &__inner  {
+    display: block;
+    color: lighten($color_base, 20);
+  }
+}

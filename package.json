@@ -1,0 +1,43 @@
+{
+  "name": "construct-css",
+  "version": "0.1.0",
+  "description": "",
+  "main": "gulpfile.babel.js",
+  "scripts": {
+    "start": "gulp serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/makotot/construct.git"
+  },
+  "keywords": [
+    "css"
+  ],
+  "author": "makotot",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/makotot/construct/issues"
+  },
+  "homepage": "https://github.com/makotot/construct#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "babel-core": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "browser-sync": "^2.13.0",
+    "cssnano": "^3.7.0",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-ejs": "^2.1.1",
+    "gulp-highlight": "^2.0.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-sass": "^2.3.1",
+    "gulp-watch": "^4.3.6",
+    "postcss-clearfix": "^1.0.0",
+    "postcss-style-guide": "^0.13.0",
+    "psg-theme-minimal": "^0.1.0",
+    "run-sequence": "^1.2.1"
+  }
+}

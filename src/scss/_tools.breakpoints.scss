@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+// ref: https://css-tricks.com/snippets/sass/mixin-manage-breakpoints/
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (max-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "warn";
+  }
+}

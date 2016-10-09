@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+.u-margin  {
+
+  @for $i from 0 through 10  {
+    #{&}-#{$i} {
+      margin: #{$i}rem;
+    }
+
+    #{&}-top-#{$i}  {
+      margin-top: #{$i}rem;
+    }
+
+    #{&}-right-#{$i}  {
+      margin-right: #{$i}rem;
+    }
+
+    #{&}-bottom-#{$i}  {
+      margin-bottom: #{$i}rem;
+    }
+
+    #{&}-left-#{$i}  {
+      margin-left: #{$i}rem;
+    }
+  }
+}
