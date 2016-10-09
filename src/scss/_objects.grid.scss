@@ -1,22 +1,5 @@
 @charset "utf-8";
 
-/*
-@styleguide
-@title Grid
-
-<div class="o-grid">
-  <div class="o-grid__column u-background-base u-color-opposite">1</div>
-  <div class="o-grid__column">2</div>
-</div>
-
-```
-<div class="o-grid">
-  <div class="o-grid__column">1</div>
-  <div class="o-grid__column">2</div>
-</div>
-```
-*/
-
 .o-grid {
   display: flex;
   flex-direction: row;

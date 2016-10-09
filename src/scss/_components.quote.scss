@@ -1,23 +1,5 @@
 @charset "utf-8";
 
-/*
-@styleguide
-@title Quote
-
-<blockquote class="c-quote">
-  <span class="c-quote__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</span>
-  <cite class="c-quote__citation">source</cite>
-</blockquote>
-
-```
-<blockquote class="c-quote">
-  <span class="c-quote__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</span>
-  <cite class="c-quote__citation">source</cite>
-</blockquote>
-```
-
-*/
-
 .c-quote  {
   padding: $quote_space;
   margin: 0;

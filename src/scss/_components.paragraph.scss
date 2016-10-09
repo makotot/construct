@@ -1,16 +1,5 @@
 @charset "utf-8";
 
-/*
-@styleguide
-@title Paragraph
-
-<p class="c-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida mauris non aliquam pretium. Mauris scelerisque metus vel odio porta molestie. Morbi blandit nisl id gravida lobortis.</p>
-
-```
-<p class="c-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida mauris non aliquam pretium. Mauris scelerisque metus vel odio porta molestie. Morbi blandit nisl id gravida lobortis.</p>
-```
-*/
-
 .c-paragraph  {
   margin: $paragraph_space 0;
   font-size: $paragraph_font_size;

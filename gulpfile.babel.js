@@ -4,7 +4,6 @@ import sass from 'gulp-sass'
 import postcss from 'gulp-postcss'
 import cssnano from 'cssnano'
 import autoprefixer from 'autoprefixer'
-import styleguide from 'postcss-style-guide'
 import ejs from 'gulp-ejs'
 import watch from 'gulp-watch'
 import run from 'run-sequence'
@@ -16,7 +15,7 @@ import packageJson from './package.json'
 
 gulp.task('clean', (cb) => {
   return del([
-    './dist'
+    './docs',
   ], cb)
 })
 
@@ -29,15 +28,10 @@ gulp.task('css', () => {
     .pipe(sass())
     .pipe(postcss([
       autoprefixer,
-      styleguide({
-        project: 'CONSTRUCT',
-        dest: './dist/styleguide.html',
-        theme: 'minimal',
-      }),
       cssnano,
     ]))
     .pipe(plumber.stop())
-    .pipe(gulp.dest('./dist/css'))
+    .pipe(gulp.dest('./docs/css'))
     .pipe(browserSync.stream())
 })
 
@@ -45,7 +39,6 @@ gulp.task('template', () => {
   return gulp
     .src([
       './src/templates/*.ejs',
-      './src/templates/*_.ejs',
     ])
     .pipe(ejs({
       title: 'CONSTRUCT',
@@ -91,20 +84,20 @@ gulp.task('template', () => {
       ext: '.html',
     }))
     .pipe(highlight())
-    .pipe(gulp.dest('./dist'))
+    .pipe(gulp.dest('./docs'))
     .pipe(browserSync.stream())
 })
 
 gulp.task('serve', () => {
   run('clean', ['template', 'css'], () => {
     browserSync.init({
-      server: './dist',
+      server: './docs',
       open: false,
     })
   })
 
   gulp
-    .watch(['./dist/*.html'])
+    .watch(['./docs/*.html'])
     .on('change', browserSync.reload)
 
   gulp.watch(['./src/templates/**/*.ejs'], ['template'])

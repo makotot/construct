@@ -1,14 +1,10 @@
 @charset "utf-8";
 
-/* @start color */
-
 $color_base: rgba(60, 60, 60, 1) !default;
 $color_base_opposite: #fff !default;
 $color_primary: rgba(65, 95, 225, 1) !default;
 $color_secondary: rgba(255, 100, 100, 1) !default;
 $color_disabled: darken($color_base_opposite, 12) !default;
-
-/* @end color */
 
 
 $font_size: 14px !default;
