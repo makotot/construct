@@ -14,6 +14,14 @@
     }
   }
 
+  &--fixed-left-sidebar {
+    margin-left: 260px;
+  }
+
+  &--fixed-right-sidebar {
+    margin-right: 260px;
+  }
+
   &--with-headbar  {
     @include respond-to('medium') {
       margin-top: ($headbar_space * 2) + 1.6rem;

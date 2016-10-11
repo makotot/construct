@@ -3,4 +3,16 @@
 .o-sidebar  {
   min-width: $sidebar_width;
   overflow-y: scroll;
+
+  &--fixed-left  {
+    position: fixed;
+    min-height: 100vh;
+    left: 0;
+  }
+
+  &--fixed-right  {
+    position: fixed;
+    min-height: 100vh;
+    right: 0;
+  }
 }
