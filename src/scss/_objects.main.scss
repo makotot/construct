@@ -16,10 +16,18 @@
 
   &--fixed-left-sidebar {
     margin-left: 260px;
+
+    @include respond-to('medium') {
+      margin-left: 0;
+    }
   }
 
   &--fixed-right-sidebar {
     margin-right: 260px;
+
+    @include respond-to('medium') {
+      margin-right: 0;
+    }
   }
 
   &--with-headbar  {
