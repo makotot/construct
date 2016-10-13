@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 .c-side-nav {
-  background-color: $color_primary;
+  background-color: $sidenav_background_color;
   word-wrap: break-word;
 
   &__head {
@@ -40,5 +40,10 @@
       background-color: $color_base_opposite;
       color: $color_primary;
     }
+  }
+
+  &__link--current  {
+    background-color: $color_base_opposite;
+    color: $color_primary;
   }
 }
