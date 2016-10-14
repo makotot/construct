@@ -1,11 +1,10 @@
 @charset "utf-8";
 
 $color_base: rgba(60, 60, 60, 1) !default;
-$color_base_opposite: #fff !default;
+$color_base_opposite: rgba(255, 255, 255, 1) !default;
 $color_primary: rgba(65, 95, 225, 1) !default;
 $color_secondary: rgba(255, 100, 100, 1) !default;
 $color_disabled: darken($color_base_opposite, 12) !default;
-
 
 $font_size: 14px !default;
 $font_size_small: 12px !default;
@@ -21,7 +20,6 @@ $breakpoints: (
 ) !default;
 
 $sidebar_width: 260px !default;
-$sidenav_background_color: $color_primary !default;
 
 $side_nav_link_duration: 0.3s !default;
 $side_nav_space: 1rem !default;
