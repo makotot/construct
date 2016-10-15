@@ -6,7 +6,7 @@
   &--with-sidebar {
 
     // TODO: cannot compile $sidebar_width with calc function.
-    max-width: calc(100vw - 260px);
+    width: calc(100vw - 260px);
     margin: 0 auto;
 
     @include respond-to('medium') {
